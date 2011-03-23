@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  time_of_day: 2011-03-23 13:13:17
+  description: MyText
+  effort: 1
+  quality: 1
+
+two:
+  time_of_day: 2011-03-23 13:13:17
+  description: MyText
+  effort: 1
+  quality: 1
