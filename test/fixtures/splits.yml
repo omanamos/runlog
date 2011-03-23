@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  distance: 9.99
+  distance_units: 1
+  duration: 9.99
+  notes: MyText
+  position: 1
+
+two:
+  distance: 9.99
+  distance_units: 1
+  duration: 9.99
+  notes: MyText
+  position: 1

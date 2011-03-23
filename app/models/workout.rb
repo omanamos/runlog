@@ -1,5 +1,6 @@
-class Workout < ActiveRecord::Base
+class Workout < Entry
       has_one :entry, :as => :loggable
-      belongs_to :workoutable, :polymorphic => true
       has_and_belongs_to_many :tags
+      has_many :sub_workouts
+      validates_presence_of :date
 end

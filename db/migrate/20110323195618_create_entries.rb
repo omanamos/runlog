@@ -1,7 +1,7 @@
 class CreateEntries < ActiveRecord::Migration
   def self.up
     create_table :entries do |t|
-      t.date :date
+      t.date :date, :null => false
       t.references :loggable, :polymorphic => true
       
       t.timestamps

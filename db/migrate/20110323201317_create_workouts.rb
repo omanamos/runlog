@@ -6,8 +6,6 @@ class CreateWorkouts < ActiveRecord::Migration
       t.integer :effort
       t.integer :quality
 
-      t.references :workoutable, :polymorphic => true
-
       t.timestamps
     end
   end
