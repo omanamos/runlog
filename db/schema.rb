@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20110323225448) do
     t.date     "date",          :null => false
     t.integer  "loggable_id"
     t.string   "loggable_type"
+    t.integer  "user_id",       :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -68,6 +69,7 @@ ActiveRecord::Schema.define(:version => 20110323225448) do
 
   create_table "user_tags", :force => true do |t|
     t.string   "color",      :null => false
+    t.integer  "user_id",    :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
