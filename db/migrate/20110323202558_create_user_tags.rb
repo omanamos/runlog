@@ -2,6 +2,7 @@ class CreateUserTags < ActiveRecord::Migration
   def self.up
     create_table :user_tags do |t|
       t.string :color, :null => false
+      t.references :user, :null => false
 
       t.timestamps
     end
