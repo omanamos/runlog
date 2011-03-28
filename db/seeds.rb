@@ -1,9 +1,17 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
-#   Mayor.create(:name => 'Daley', :city => cities.first)
+print "Creating admin..."
 
- x = User.new(:first_name => "Ryan", :last_name => "Oman", :email => "omanamos@gmail.com", :login => "omanamos", :password =>"password", :password_confirmation => "password", :role => "admin")
+x = User.new(:first_name => "Ryan", :last_name => "Oman", :email => "omanamos@gmail.com", :login => "omanamos", :password =>"password", :password_confirmation => "password", :role => "admin")
+x.save
+
+puts "Success!"
+
+
+print "Creating User Defined Tag..."
+
+y = UserTag.new(:color => "FFFFFF", :user => x)
+z = Tag.new(:content => "user tag 1", :taggable => y)
+y.tag = z
+y.save
+z.save
+
+puts "Success!"

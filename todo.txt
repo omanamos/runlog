@@ -1,0 +1,2 @@
+app/models/user_tag.rb
+	validate color attribute
