@@ -83,6 +83,8 @@ ActiveRecord::Schema.define(:version => 20110323225448) do
     t.string   "single_access_token",                :null => false
     t.string   "perishable_token",                   :null => false
     t.string   "role",                               :null => false
+    t.string   "first_name",                         :null => false
+    t.string   "last_name",                          :null => false
     t.integer  "login_count",         :default => 0, :null => false
     t.integer  "failed_login_count",  :default => 0, :null => false
     t.datetime "last_request_at"
